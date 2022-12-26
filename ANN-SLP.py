@@ -5,14 +5,14 @@ yd = [0,1,1,1]
 
 errors = [None, None, None, None]
 
-w1= 0.4
-w2= 0.1
+w1= 0.13
+w2= 0.3
 th= 0.2
-lr = 0.1
+lr = 0.4
 
 def CheckErrors(listOfErrors):
 	for element in listOfErrors:
-		if element is not 0:
+		if element != 0:
 			return False
 	return True
 
