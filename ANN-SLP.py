@@ -25,7 +25,7 @@ while True:
 	for i in range(4):
 		yp = x1[i] * w1 + x2[i] * w2 - th
 		yp = step(yp)
-		errors[i] = yd[i] - yp
+		errors[i]  = yd[i] - yp
 		w1 += lr * x1[i] * errors[i]
 		w2 += lr * x1[i] * errors[i]
 	result = CheckErrors(errors)
